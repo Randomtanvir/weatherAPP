@@ -27,7 +27,7 @@ async function checkWeather(city) {
     
     weatherBody.style.display = "flex";
     locationNotFound.style.display = "none";
-    tempture.innerHTML = `${Math.round(weatherData.main.temp - 273.15)}`;
+    tempture.innerHTML = `${Math.round(weatherData.main.temp - 273.15)}<sup>°C</sup>`;
     description.innerHTML = `${weatherData.weather[0].description}`;
     humidity.innerHTML = `${weatherData.main.humidity}%`;
     windSpeed.innerHTML = `${weatherData.wind.speed}km/H`;
